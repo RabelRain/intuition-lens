@@ -1,6 +1,6 @@
 # Intuition Lens (Demo)
 
-A browser extension and AI Agent prototype built for the **Intuition 1ETH Use Case Contest**.
+A browser extension and AI Agent prototype built for the **Intuition**.
 
 🔍 **Features**
 - Auto-resolves website domains and matches them to the Intuition Knowledge Graph.
@@ -13,4 +13,4 @@ A browser extension and AI Agent prototype built for the **Intuition 1ETH Use Ca
 - Built with vanilla JS + HTML + CSS
 
 🎬 **Demo + Story**
-Full concept, visuals, and explanation: [Medium Post Link](https://medium.com/your-post-url)
+Full concept, visuals, and explanation: [Medium Post Link]([https://medium.com/your-post-url](https://medium.com/@emrebelgames/intuition-bringing-human-intuition-back-to-the-internet-553d8bc91ba6))
