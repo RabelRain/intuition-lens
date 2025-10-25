@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Intuition Lens (Demo)",
+  "version": "0.1.4",
+  "description": "Light resolver for Intuition atoms/claims. AI Agent opens as full-page web app.",
+  "action": {
+    "default_title": "Intuition Lens",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "agent/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

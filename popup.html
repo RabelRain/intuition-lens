@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Intuition Lens</title>
+<link rel="stylesheet" href="popup.css"/>
+</head>
+<body>
+<header>
+  <div class="title"><span class="eye">◉</span><h1>Intuition Lens</h1></div>
+  <button id="resetBtn" class="ghost">Reset</button>
+</header>
+
+<section id="autoResolveSection">
+  <div class="row"><label>Current site</label><div id="currentHost" class="mono small"></div></div>
+  <button id="resolveBtn">Get tokens</button>
+</section>
+
+<section id="tokenSection" class="hidden">
+  <div class="row"><label>Pick tokens to match</label><button id="selectAllBtn" class="mini">Select all</button></div>
+  <div id="tokensBox" class="tokens"></div>
+  <button id="searchSelectedBtn">Search selected</button>
+</section>
+
+<section id="manualSection">
+  <div class="row"><label>Manual search</label><input id="searchInput" type="text" placeholder="Search atom by name/label"/></div>
+  <button id="searchBtn" class="secondary">Search</button>
+</section>
+
+<section id="resultsSection" class="hidden">
+  <div class="row"><label>Matches</label><select id="atomSelect"></select></div>
+
+  <div id="atomCard" class="card hidden">
+    <div class="row"><label>Atom</label><div id="atomLabel" class="big"></div></div>
+    <div class="grid">
+      <div><div class="k">Type</div><div id="atomType" class="v"></div></div>
+      <div><div class="k">Creator ID</div><div class="mono wrap" id="creatorId"></div><button class="mini" id="copyCreator">Copy</button></div>
+      <div><div class="k">Atom ID</div><div class="mono wrap" id="atomId"></div><button class="mini" id="copyAtom">Copy</button></div>
+      <div><div class="k">Max claim cap</div><div class="v" id="atomMaxCap">—</div></div>
+      <div><div class="k">Total claim cap</div><div class="v" id="atomTotalCap">—</div></div>
+    </div>
+    <div class="row"><a id="openOnPortal" target="_blank" rel="noreferrer">Open on Intuition</a></div>
+  </div>
+
+  <div id="claimsControls" class="controls hidden">
+    <label>Sort claims by</label>
+    <select id="sortSelect">
+      <option value="marketCap">Market cap (desc)</option>
+      <option value="newest">Newest</option>
+      <option value="alpha">Predicate (A→Z)</option>
+    </select>
+    <span id="claimsCount" class="dim"></span>
+  </div>
+
+  <ul id="claimsList" class="list"></ul>
+</section>
+
+<section id="statusSection"><div id="status" class="status"></div></section>
+
+<div class="bottom-bar">
+  <button id="tradeBtn">Trade</button>
+  <button id="agentBtn">AI Agent</button>
+  <button id="settingsBtn">Settings</button>
+</div>
+
+<footer><span class="dim small">Demo build • Uses testnet endpoint</span></footer>
+
+<!-- Soon modals -->
+<div id="modalSoon" class="modal" style="display:none;align-items:center;justify-content:center;position:fixed;inset:0;background:rgba(0,0,0,.6)">
+  <div class="box" style="background:#121216;border:1px solid #1d1d24;border-radius:12px;padding:16px;min-width:260px;max-width:320px">
+    <div class="row"><strong>Coming Soon</strong><button id="closeSoon" class="mini">Close</button></div>
+    <p class="small dim">This feature will be available in the next phase.</p>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
