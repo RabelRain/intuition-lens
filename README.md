@@ -13,4 +13,4 @@ A browser extension and AI Agent prototype built for the **Intuition**.
 - Built with vanilla JS + HTML + CSS
 
 🎬 **Demo + Story**
-Full concept, visuals, and explanation: [Medium Post Link]([https://medium.com/your-post-url](https://medium.com/@emrebelgames/intuition-bringing-human-intuition-back-to-the-internet-553d8bc91ba6))
+Full concept, visuals, and explanation: https://medium.com/your-post-url](https://medium.com/@emrebelgames/intuition-bringing-human-intuition-back-to-the-internet-553d8bc91ba6
