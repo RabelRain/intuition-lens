@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Intuition AI Agent • Prototype</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <div class="title"><span class="eye">◉</span><strong>AI Agent • Prototype</strong></div>
+  <div class="inline small dim">
+    <span id="ctxAtom" class="mono"></span>
+    <span id="ctxTokens" class="mono"></span>
+    <button id="backBtn" class="ghost">Back to extension</button>
+  </div>
+</header>
 
+<div class="main">
+  <div class="col">
+    <header><strong>Agents</strong></header>
+    <div class="content" id="agents"></div>
+  </div>
+  <div class="col">
+    <header><strong>Live data</strong></header>
+    <div class="content" id="feed"></div>
+  </div>
+  <div class="col">
+    <header><strong>Proposed claims (S–P–O)</strong></header>
+    <div class="content" id="claims"></div>
+  </div>
+</div>
+
+<footer>
+  <button id="stopAll" class="secondary">Stop all</button>
+  <button id="startAll">Start all</button>
+  <button id="submit">Submit approved (mock)</button>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
